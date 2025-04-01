@@ -1,0 +1,22 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Heladera {
+    - Modelo modelo
+    - SensorMovimiento sensorMovimiento
+    - boolean activa
+    - Ubicacion ubicacion
+    - Integer temperaturaActual
+    + actualizarSensores()
+}
+
+class Ubicacion {
+    - float latitud
+    - float longitud
+}
+
+class Modelo {
+    - String nombreModelo
+    - SensorDeTemperatura sensorDeTemperatura
+}
+@enduml
