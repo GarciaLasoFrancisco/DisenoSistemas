@@ -2,7 +2,7 @@ package utn;
 
 import java.util.ArrayList;
 import java.util.List;
-
+ 
 public class Inscripcion {
     public Alumno alumno;
     public List<Materia> materiasParaInscripcion;
