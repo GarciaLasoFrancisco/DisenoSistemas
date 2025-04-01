@@ -12,7 +12,7 @@ public class Alumno {
         this.materiasAprobadas = new ArrayList<>();
     }
 
-    public void setMateriasAprobadas(List<Materia> materiasAprobadas) {
-        this.materiasAprobadas = materiasAprobadas;
+    public void setMateriasAprobadas(Materia materiaAprobada) {
+        this.materiasAprobadas.add(materiaAprobada);
     }
 }
