@@ -16,7 +16,7 @@ public class Materia {
         return materiasCorrelativas;
     }
 
-    public void setMateriasCorrelativas(List<Materia> materiasCorrelativas) {
-        this.materiasCorrelativas = materiasCorrelativas;
+    public void setMateriasCorrelativas(Materia materiaCorrelativa) {
+        this.materiasCorrelativas.add(materiaCorrelativa);
     }
 }
