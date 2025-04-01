@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Alumno {
+    - Integer legajo
+    - List<Materia> materiasAprobadas
+    + setMateriasAprobadas(Materia)
+}
+
+class Inscripcion {
+    - Alumno alumno
+    - List<Materia> materiasParaInscripcion
+    - List<Materia> materiasNecesarias
+    + setMateriasNecesarias(List<Materia>)
+    + setMateriasParaInscripcion()
+    + aprobada() : boolean
+}
+
+class Materia {
+    - String nombre
+    - List<Materia> materiasCorrelativas
+    + getMateriasAprobadas(Materia)
+    + setMateriasAprobadas(Materia)
+} 
+Alumno--> Materia
+Inscripcion --> Materia
+Inscripcion --> Alumno
+Materia --> Materia
+@enduml
